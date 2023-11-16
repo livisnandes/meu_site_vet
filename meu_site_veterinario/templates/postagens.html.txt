@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicina Veterinária</title>
+</head>
+<body>
+    <h1>Bem-vindo à Medicina Veterinária</h1>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('postagens') }}">Postagens</a></li>
+            <li><a href="{{ url_for('resumos') }}">Resumos</a></li>
+            <li><a href="{{ url_for('apostilas') }}">Apostilas</a></li>
+            <li><a href="{{ url_for('arquivos') }}">Arquivos</a></li>
+            <li><a href="{{ url_for('videos') }}">Vídeos</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

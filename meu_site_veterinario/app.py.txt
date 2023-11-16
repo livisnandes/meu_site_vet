@@ -1,0 +1,35 @@
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+@app.route('/postagens')
+def postagens():
+    # Adicione lógica para obter postagens do banco de dados ou de um arquivo
+    return render_template('postagens.html')
+
+@app.route('/resumos')
+def resumos():
+    # Adicione lógica para obter resumos do banco de dados ou de um arquivo
+    return render_template('resumos.html')
+
+@app.route('/apostilas')
+def apostilas():
+    # Adicione lógica para obter apostilas do banco de dados ou de um arquivo
+    return render_template('apostilas.html')
+
+@app.route('/arquivos')
+def arquivos():
+    # Adicione lógica para obter arquivos do banco de dados ou de um arquivo
+    return render_template('arquivos.html')
+
+@app.route('/videos')
+def videos():
+    # Adicione lógica para obter vídeos do banco de dados ou de um arquivo
+    return render_template('videos.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
